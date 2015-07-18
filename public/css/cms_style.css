@@ -1,0 +1,145 @@
+/* ----------- Content ------------ */
+body,html{
+    padding-top:40px;
+
+}
+@media screen and (max-width: 760px){
+    ul.breadcrumb>li>a,ul.breadcrumb>li.active {
+        font-size: 1em;
+    }
+}
+.error-display{
+    font-size:20px ;
+    font-weight: 600;
+    color:#FF4D4D;
+    padding: 15px;
+}
+.error{
+    font-size:14px ;
+    color:#FF4D4D;
+}
+
+.message-success{
+    font-size:20px ;
+    font-weight: 600;
+    color:green;
+    padding: 15px;
+}
+
+.btn-default{
+    background:#2E2E2E;
+    color:#FFFFFF;
+}
+.btn-default:hover{
+    background:#FFF;
+    color:#2E2E2E;
+}
+.btn-primary{
+    background:#286090;
+    color:#FFFFFF;
+}
+.btn-primary:hover{
+    background:#FFF;
+    color:#286090;
+}
+.btn-danger{
+    background:#D9534F;
+    color:#FFFFFF;
+}
+.btn-danger:hover{
+    background:#FFF;
+    color:  #D9534F;
+;
+}
+
+.btn-info{
+    background:#31B0D5;
+    color:#FFFFFF;
+}
+.btn-info:hover{
+    background:#fff;
+    color:#286090;
+}
+.btn-success{
+    background:#449D44;
+    color:#000;
+}
+.btn-success:hover{
+    background:#fff;
+    color:#449D44;
+}
+
+a[role=button],a[role=button]:active{
+    font-size: 18px;
+}
+
+a:link,a:visited{
+    color: #264780;
+}
+
+a:hover,a:active{
+    color:#6495ED;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 760px){
+    .btn{
+        margin-bottom: 15px;
+    }
+}
+
+/* ---------------- cms orders ----------------- */
+
+.message{
+    color: darkgreen;
+    font-weight: 600;
+    font-size: 20px;
+
+}
+
+table.table-orders,table.table-messages{
+    background: #E6E6E6;
+}
+table.table-orders>tbody>tr,table.table-messages>tbody>tr{
+    cursor: pointer;
+}
+table.table-orders>tbody>tr:first-child,table.table-messages>tbody>tr:first-child{
+    background: #7d7d7d;
+}
+table.table-orders>tbody>tr>td>div{
+    height:auto ;
+}
+table.table-messages>tbody>tr>td>div{
+    height:30px ;
+    overflow:hidden;
+}
+
+@media screen and (max-width: 760px){
+
+    table.table-messages>tbody>tr>td>div{
+        max-width:500px;
+    }
+}
+
+/* ------ cms edit-images  ----- */
+
+table.table-main-image tbody tr td{
+    padding-right: 15px;
+    border-bottom: 1px solid #264780;
+}
+table.table-main-image  td div.radio{
+    position: relative;
+    left:25px;
+}
+
+
+.thumbnail{
+    height: 180px;
+    position: relative;
+}
+
+.thumbnail .caption{
+    position:absolute;
+    top: 130px;
+}
+

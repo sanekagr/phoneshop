@@ -1,0 +1,167 @@
+/* Footer css doc*/
+
+/* ----------- Modals ------------ */
+#modalFirst{
+    padding-top: 15%;
+}
+
+#modalFirst>.modal-dialog>.modal-content{
+    border-radius: 0;
+}
+
+#myModal2>.modal-dialog>.modal-content,
+#modalFirst>.modal-dialog>.modal-content{
+    background:#575757;
+    color:#E6E6E6;
+    box-shadow: 0 0 30px #222;
+}
+#myModal2>.modal-dialog>.modal-content h1.modal-title{
+    font-weight: 700;
+}
+
+#myModal2 #contactForm .form-control{
+    background-color: #D3D3D3;
+}
+
+#myModal2 #contactForm .help-block{
+    background: #e55454;
+    color:#fff;
+    font-weight: 600;
+}
+
+#myModal2 #contactForm .mes .has-feedback .form-control-feedback{
+    top:20px;
+}
+
+#myModal2>.modal-dialog>.modal-content button{
+    border: none;
+}
+
+#modalFirst>.modal-dialog>.modal-content a:link,a:visited{
+    color: #6495ED;
+    transition: 0.3s;
+}
+
+#modalFirst>.modal-dialog>.modal-content a:hover,a:active{
+    color:#264780;
+    transition: 0.3s;
+}
+#modalFirst>.modal-dialog>.modal-content button.btn-default{
+    border: none;
+    background: #575757;
+}
+#modalFirst>.modal-dialog>.modal-content h1{
+    font-weight: 700;
+}
+@media (max-width: 1000px){
+    #modalFirst{
+        padding-top: 25%;
+    }
+
+}
+/*-----  footer -----*/
+
+.btn-contact{
+    position: relative;
+    border-top: none;
+    border-bottom: none;
+    background: #2A2E2D;
+    color:#fff;
+    transition: 0.3s;
+}
+
+.btn-contact:hover{
+    background: #fff;
+    color:#2A2E2D;
+    box-shadow: 0 0 10px #222;
+    transition: 0.3s;
+}
+
+.footer a{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+    color: #2A2E2D;
+}
+
+.footer .brand a{
+    font-family: Indie Flower, sans-serif;
+    font-size: 22px;
+}
+
+.footer a:hover{
+    color: #fff;
+}
+
+.footer .message{
+    margin-left: 20px;
+}
+
+.footer{
+    background: #6495ED;
+    min-height:90px;
+    line-height:90px;
+    position:absolute;
+    bottom:0;
+    right: 0;
+    left:0;
+    width:100%;
+    text-align: center;
+    border-top:3px solid #2a2e2d ;
+    box-shadow: 0 0 25px #2a2e2d ;
+}
+
+.small-footer{
+   margin: 0;
+   padding: 0;
+   height: 40px;
+   line-height: 15px;
+   font-size: 14px;
+}
+.footer .small-footer>a{
+    font-size: 14px;
+}
+
+
+/*
+|--------------------------------------------------------------------------
+| UItoTop jQuery Plugin 1.2
+| http://www.mattvarone.com/web-design/uitotop-jquery-plugin/
+|--------------------------------------------------------------------------
+*/
+
+#toTop {
+    display:none;
+    text-decoration:none;
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    overflow:hidden;
+    width:51px;
+    height:51px;
+    border:none;
+    text-indent:100%;
+    opacity:0.5;
+    background:url(../img/ui.totop.png) no-repeat left top;
+    transition: 0.8s opacity;
+}
+
+#toTopHover {
+    background:url(../img/ui.totop.png) no-repeat left -51px;
+    width:51px;
+    height:51px;
+    display:block;
+    overflow:hidden;
+    float:left;
+    opacity: 0;
+    -moz-opacity: 0;
+    filter:alpha(opacity=0);
+}
+#toTop:hover{
+    transition: 0.8s opacity;
+    opacity:0.7;
+}
+
+#toTop:active, #toTop:focus {
+    outline:none;
+}

@@ -1,0 +1,477 @@
+/* Content css doc*/
+
+/* ----------- Content ------------ */
+
+.error-display{
+    font-size:20px ;
+    font-weight: 600;
+    color: #FF4D4D;
+    padding: 5px;
+}
+
+.message-success{
+    font-size:20px ;
+    font-weight: 600;
+    color: #008000;
+    padding: 5px;
+}
+
+.btn-default{
+    background:#2E2E2E;
+    color:#FFFFFF;
+    transition: 0.3s;
+}
+ .btn-default:hover{
+    background:#FFF;
+    color:#2E2E2E;
+     transition: 0.3s;
+}
+ .btn-primary{
+    background:#286090;
+    color:#FFFFFF;
+     transition: 0.3s;
+}
+ .btn-primary:hover{
+    background:#FFF;
+    color:#286090;
+    transition: 0.3s;
+}
+.btn-danger{
+    background:#D9534F;
+    color:#FFFFFF;
+    transition: 0.3s;
+}
+.btn-danger:hover{
+    background:#FFF;
+    color:  #D9534F;
+    transition: 0.3s;
+;
+}
+
+.btn-info{
+     background:#31B0D5;
+     color:#FFFFFF;
+     transition: 0.3s;
+ }
+.btn-info:hover{
+    background:#fff;
+    color:#286090;
+    transition: 0.3s;
+}
+.btn-success{
+    background:#449D44;
+    color:#000;
+    transition: 0.3s;
+}
+.btn-success:hover{
+    background:#fff;
+    color:#449D44;
+    transition: 0.3s;
+}
+
+a[role=button],a[role=button]:active{
+     font-size: 18px;
+ }
+
+a:link,a:visited{
+    color: #264780;
+    transition: 0.3s;
+}
+
+a:hover,a:active{
+    color:#6495ED;
+    transition: 0.3s;
+}
+
+button.link{
+    background:none;
+    border:none;
+    color:#264780;
+    padding:0;
+    cursor:pointer;
+}
+
+button.link:hover{
+    color:#6495ED;
+}
+
+@media screen and (max-width: 760px){
+    .btn{
+        margin-bottom: 15px;
+    }
+}
+
+/* ------------------   Home  and Products ---------------------- */
+
+.fotorama-home .fotorama__caption .fotorama__caption__wrap{
+    background: #222;
+    opacity: 0.8;
+    position: relative;
+    bottom: 300px;
+    left:0px;
+    border-radius:0 50px 0 0 ;
+}
+.fotorama-home .fotorama__caption .fotorama__caption__wrap .caption h1{
+    font-size: 3em;
+    font-weight:600;
+    font-style: italic;
+    color: #E6E6E6;
+    margin: 15px 15px 15px 37px;
+    transition: 0.3s;
+
+}
+
+.fotorama-home .fotorama__caption .fotorama__caption__wrap .caption h1:hover{
+    color: orangered;
+    transition: 0.3s;
+}
+
+.fotorama-home .fotorama__caption .fotorama__caption__wrap .caption > a >h1{
+    color:#286090;
+    transition: 0.3s;
+}
+
+.fotorama-home .fotorama__caption .fotorama__caption__wrap .caption > a >h1:hover{
+    color: #fff6d9;
+    transition: 0.3s;
+}
+
+@media screen and (max-width: 1200px) and (min-width: 760px){
+
+    .fotorama-home .fotorama__caption .fotorama__caption__wrap .caption h1{
+        font-size: 1.5em;
+        margin: 10px 10px 10px 37px;
+    }
+    .fotorama-home .fotorama__caption .fotorama__caption__wrap{
+
+        bottom: 80px;
+        left:0px;
+        border-radius:0 30px 0 0 ;
+    }
+
+}
+@media screen and (max-width: 760px){
+
+    .fotorama-home .fotorama__caption .fotorama__caption__wrap .caption h1{
+        font-size: 1.2em;
+        margin: 10px 10px 10px 37px;
+    }
+    .fotorama-home .fotorama__caption .fotorama__caption__wrap{
+
+        bottom: 0px;
+        left:0px;
+        border-radius:0 20px 0 0 ;
+    }
+
+}
+
+.marquee {
+    position:relative;
+    overflow:hidden;
+    width:100%;
+    height: 60px;
+    line-height: 60px;
+    background: #286090;
+    font-weight: 500;
+    font-size: 2em;
+    font-style: italic;
+    color:#fff;
+    margin-top: 0;
+}
+
+.marquee span.h1-home{
+    white-space:nowrap;
+}
+
+.category_cart{
+    padding-bottom: 10px;
+    border-bottom: 2px solid #6495ED;
+}
+.category_cart a:link, a:hover, a:active{
+    text-decoration: none;
+}
+
+.product_cart{
+    box-shadow: 0 0 15px #222;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 0 10px 10px 0;
+    max-width: 280px;
+    min-height:340px;
+    background: #fff;
+}
+
+.product_cart:hover{
+    box-shadow: inset 0 0 30px #222;
+}
+
+.product_cart .btn-primary{
+    margin-top: 15px;
+}
+.product_cart a img{
+    height: 150px;
+    max-width: 200px;
+}
+.product_cart .title{
+   height: 70px;
+    overflow: hidden;
+}
+
+.category_cart a>h1{
+    font-size: 30px;
+    font-weight: 600;
+}
+
+@media screen and (max-width: 1200px) and (min-width:999px){
+    .product_cart {
+        min-height:350px;
+        max-width: 470px;
+    }
+
+}
+
+@media screen and (max-width: 999px) and (min-width:760px){
+    .product_cart {
+        min-height:350px;
+        max-width: 350px;
+    }
+}
+
+@media screen and (max-width: 760px){
+    .product_cart {
+        max-width: 100%;
+    }
+
+}
+
+/* -------- categories - Products Page--------*/
+
+.categories{
+    box-shadow: 0 0 15px #222;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 0 10px 10px 0;
+    max-width: 350px;
+    min-height:400px;
+    background: #fff;
+
+}
+.categories:hover{
+    box-shadow: inset 0 0 30px #222;
+}
+
+.categories .title>a>h3{
+    font-weight: 600;
+}
+.categories .title {
+    height: 90px;
+    overflow: hidden;
+}
+
+
+/* ---------- Item ----------- */
+
+.item-h2{
+    font-weight: 600;
+    color: #2A2E2D;
+}
+
+/* --- fotorama --- */
+
+.fotorama-items .fotorama__nav__shaft{
+    float: left;
+}
+
+.fotorama__thumb-border{
+    border:2px solid #222;
+}
+.fotorama__thumb:hover{
+    border:2px solid #286090;
+}
+
+
+/* ----- item-cart ----- */
+
+.item-cart{
+    padding:0 50px;
+}
+
+.item-cart p a, .item-cart p a:visited{
+    color:#0E3372;
+}
+
+.item-cart p a:hover,a:active{
+    color:#6495ED;
+}
+
+/* --------- log-in Sign-up Edit Account-------------*/
+
+.log-window{
+    border-radius: 5px;
+    box-shadow: 0 0 15px #222;
+    padding: 0px 20px 40px;
+}
+.log-window .btn-default{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.log-window h3{
+    margin-bottom: 25px;
+}
+.register{
+    margin-top: 20px;
+}
+.register a,.register a:visited{
+    font-size: 18px;
+    font-weight: 600;
+    color: #264780;
+}
+
+.register a:hover,.register a:active{
+    color:#6495ED;
+}
+/*-----------user/edit:tabs------------*/
+
+.my-tab .nav-tabs a {
+    background: #6495ED;
+    color:#2A2E2D;
+    font-weight: 600;
+}
+.my-tab .nav-tabs a:hover {
+    background: #2A2E2D;
+    color:#6495ED;
+}
+.my-tab .nav-tabs a:active {
+    font-size: 16px;
+    font-weight: 600;
+    color:#2A2E2D;
+}
+
+.my-tab .tab-pane {
+    background: #fff;
+    padding:  20px;
+}
+
+.my-tab .tab-pane .content-tab{
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+
+.my-tab{
+    background: #F5F5F5;
+    box-shadow: 0 0 15px #7F7F7F;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* --------- 404------------- */
+
+.page-404{
+  text-align: center;
+}
+.page-404 h1{
+    font: 3em Indie Flower,sans-serif;
+    font-weight: 800;
+}
+.page-404 img{
+    max-height: 300px;
+}
+
+/* --------- contact us ---------- */
+
+.h1-content{
+    font: 3em Indie Flower,sans-serif bold;
+    color:#1e3968;
+}
+.map-div{
+    box-shadow: 0 0 15px #222;
+    overflow:hidden;
+    height:400px;
+    width:90%;
+}
+#gmap_canvas,#gmap_canvas2{
+    height:100%;
+    width:100%;
+}
+
+@media (max-width:1000px ){
+
+    .map-div{
+        width:100%;
+    }
+    .h1-content{
+        margin-top: -20px;
+    }
+}
+/* ---------- about -------------- */
+
+.logo-about{
+    font-family:Indie Flower,sans-serif;
+    font-size: 3em;
+    font-weight: 600;
+    color:#1E3968;
+}
+.logo-about img{
+    height: 1.8em;
+}
+
+/* ------------ checkout ---------------- */
+
+table.table-cart >tbody>tr> td{
+    vertical-align: middle;
+}
+.table-cart>tbody>tr>td.name{
+    min-width: 400px;
+}
+.table-cart>tbody>tr>td.name>a{
+    font-size: 18px;
+    font-weight: 600;
+    color: #264780;
+}
+.table-cart>tbody>tr>td.name>a:hover{
+    text-decoration: underline;
+    color:#6495ED;
+}
+
+table.table-cart >tbody>tr>td.quantity{
+    min-width: 130px;
+}
+
+.table-cart>tbody>tr>td.price{
+    min-width: 130px;
+}
+
+.table-cart > a:link,a:active{
+    font-size: 18px;
+}
+
+/*  ------------- order -------------  */
+
+.order a:link, .order  a:visited{
+    color: #264780;
+}
+
+.order a:hover,.order  a:active{
+    color:#6495ED;
+}
+
+/* --------------- search results ----------------------*/
+
+.description {
+    overflow: hidden;
+    max-height: 120px;
+    transition: max-height 0.5s ease-out;
+    cursor: pointer;
+}
+.description:hover{
+    max-height: 500px;
+    transition: max-height 0.5s ease-in;
+}
+.result img{
+    height: 120px;
+}

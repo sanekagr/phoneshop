@@ -1,0 +1,359 @@
+/* Header css doc*/
+/*@import url(http://fonts.googleapis.com/css?family=Pacifico);*/
+/*@import url(http://fonts.googleapis.com/css?family=Merriweather+Sans);*/
+/*@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro);*/
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:700,400);
+@import url(http://fonts.googleapis.com/css?family=Indie+Flower);
+
+*{
+    margin: 0;
+}
+body,html{
+    margin:0;
+    height:100%;
+    padding-top:25px;
+    font-size: 16px;
+    color:#000;
+    font-family: 'Open Sans', sans-serif !important;
+    /*background: #E8E8E8;*/
+    background: #FFF;
+}
+
+hr{
+    border-color:#000000;
+}
+
+#wrapper{
+    min-height:100%;
+    position:relative;
+}
+
+/*   ----------------------  navbars   --------------------    */
+
+/* --------------   main fixed menu  ------------ */
+
+.navbar-inverse{
+    height: 60px;
+    border-bottom:10px #6495ED solid;
+    font-size: 16px;
+}
+.navbar-inverse ul li,.navbar-inverse ul li a{
+    height: 50px;
+}
+
+.navbar-inverse,
+.navbar-inverse .navbar-collapse,
+.dropdown-menu{
+    background-color: #2A2E2D;
+}
+
+/* -------- brand and phone with search -------- */
+
+.navbar-brand {
+    font-size:35px;
+    font-family: Indie Flower, sans-serif;
+    font-weight: 600;
+    position: relative;
+    bottom: 10px;
+}
+
+.navbar-inverse .navbar-one>li>form{
+    position: relative;
+    top:3px;
+}
+.navbar-inverse .navbar-one>li>a{
+    font-size: 22px;
+    padding-top: 15px;
+    font-weight: 600;
+}
+
+.navbar-img{
+    position: relative;
+    bottom: 5px;
+    height: 60px;
+    width: 60px;
+}
+
+.navbar-inverse  .navbar-brand,
+.navbar-inverse .navbar-one > li >a {
+    color:#fff;
+    transition: color 0.3s ease-in;
+}
+.navbar-inverse .navbar-brand:hover,
+.navbar-inverse .navbar-one>li>a:hover {
+    color:#6495ED;
+    transition: color 0.3s;
+}
+
+.navbar-inverse .navbar-toggle{
+    border-color:#fff;
+}
+
+/* ----------------- main fixed navbar ------------------- */
+
+.navbar-inverse .navbar-collapse .navbar-nav>li>a{
+    background-color: #2A2E2D;
+    transition: background 0.3s ease-in;
+}
+
+.navbar-inverse .navbar-collapse .navbar-nav>.active>a:hover,
+.navbar-inverse .navbar-collapse .navbar-nav>li>a:hover
+{
+    background-color: #6495ED;
+    transition: all 0.3s ease;
+}
+
+.navbar-inverse .navbar-collapse .navbar-nav>.active>a{
+    background-color:#4E4E4E;
+    color:#FFFFFF;
+}
+
+.navbar-inverse .navbar-collapse .navbar-nav>li>a{ color:#dcdcdc}
+
+.navbar-inverse .navbar-collapse .navbar-nav>li>a:hover,
+.navbar-inverse .navbar-collapse .navbar-nav>.active>a:hover
+{ color: #000000}
+
+.dropdown-menu>li>a:hover { background-color: #080808}
+.dropdown-menu>li>a { color: #999999}
+.dropdown-menu>li>a:hover{ color: #FFFFFF}
+
+/* disabling growth of font size and weight on active state*/
+.navbar-inverse .navbar-nav>li>a:active{
+    font-size: 16px;
+    font-weight: 500;
+}
+.navbar-inverse .navbar-brand:active{
+    font-size: 35px;
+}
+
+.navbar-inverse .navbar-one>li>a:active{
+    font-size: 18px;
+}
+
+.navbar-inverse .navbar-nav>li>a.nav-name{
+    color: coral;
+}
+.navbar-inverse .navbar-nav>li>a.nav-name:hover{
+    color: #2A2E2D;
+}
+
+.li-cart>span.cart_count{
+    position: relative;
+    bottom:52px;
+    left:19px;
+    color:#dcdcdc;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.li-cart>span.cart_count:hover{
+    text-shadow: 0px 0px 5px #fff;
+}
+
+.btn-search2:active{
+    font-size: 14px;
+}
+
+@media screen and (max-width: 768px){
+    .btn-search2{
+        position: absolute;
+        top:8px;
+        right:80px;
+        cursor: pointer;
+    }
+    .navbar-img{
+        height: 50px;
+        width: 50px;
+    }
+    .navbar-brand {
+        font-size:25px;
+    }
+    .navbar-inverse .navbar-brand:active{
+        font-size: 25px;
+    }
+
+}
+
+/*  ---------------------- second navbar ---------------------- */
+
+.navbar-default{
+    height: 49px;
+    background: #E6E6E6;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 0;
+    box-shadow: 0 0 8px #222;
+    margin-bottom: 5px;
+}
+
+.navbar-default .navbar-nav>li,.navbar-default .navbar-nav>li>a{
+    height: 49px;
+}
+.navbar-default .navbar-nav>li>a {
+    padding-top: 18px;
+    min-width: 70px;
+    transition: background 0.3s ease-in;
+    color:#2A2E2D;
+}
+.navbar-default .navbar-nav>li>a:hover{
+    color:#000;
+    background: #6495ED;
+    transition: background 0.3s;
+    height: 51px;
+    border-bottom: 3px solid #2A2E2D;
+}
+
+.navbar-default .navbar-nav>li>a:active,
+.navbar-default .navbar-nav>.active>a{
+    background: #4E4E4E;
+    color:#fff;
+}
+
+.navbar-default .navbar-nav>li>a:active{
+    font-size: 16px;
+    font-weight: 600;
+}
+
+
+/* --- dropdown --- */
+
+/*http://stackoverflow.com/questions/19935480/bootstrap-3-how-to-make-head-of-dropdown-link-clickable-in-navbar    answer of user3314900*/
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu{
+    padding:0px;
+    margin-top: 0px;
+    top:49px;
+    z-index: 2;
+}
+
+.dropdown-menu>li>a{
+    background: #E6E6E6;
+    color:#2A2E2D;
+    transition: background 0.3s ease-in;
+    padding:12px;
+    font-size: 16px;
+    font-weight: 600;
+}
+.dropdown-menu>li>a:hover{
+    color:#2A2E2D;
+    background: #6495ED;
+    transition: background 0.3s;
+}
+
+@media screen and (max-width: 768px){
+    .dropdown-menu>li>a{
+        background: #2A2E2D;
+        color:#fff;
+    }
+}
+.dropdown-menu>li>a:active,
+.dropdown-menu>.active>a{
+    font-size: 16px;
+    font-weight: 600;
+    background: #4E4E4E;
+    color:#fff;
+}
+
+/*  ----centering---- */
+
+.navbar-default{
+    text-align: center;
+}
+.navbar-default .navbar-nav{
+    display:inline-block;
+    float: none;
+    vertical-align: top;
+}
+
+
+/* ----   container  ------- */
+
+/* search */
+.navbar-one form input,.btn-search{
+    border-radius:0;
+}
+.search .btn-search, .search form input{
+    border-radius:5px;
+}
+.search{
+    margin: 20px 0 ;
+    position: fixed;
+    top:40px;
+    left:0;
+    z-index: 2;
+    background: #282C2B;
+    padding:15px 15px 5px 15px;
+    border-bottom: 2px solid #222;
+    width:100%;
+}
+
+.search input{
+    border:2px solid #2A2E2D;
+
+}
+.btn-search{
+    color:#fff;
+    background: #2A2E2D;
+    transition: background 0.3s;
+}
+.btn-search:hover{
+    color:#2A2E2D;
+    background: #6495ED;
+    transition: background 0.3s;
+}
+.navbar-one .btn-search{
+    border-color: #fff;
+}
+.search .btn-search{
+    border:1px solid #2A2E2D;
+}
+
+/* for the place of fixed footer*/
+.content-general{
+    padding-bottom:170px;
+}
+
+
+/* ---------------  breadcrumbs -----------------   */
+
+.breadcrumb{
+     /*background: #E8E8E8;*/
+     background: #FFF;
+
+}
+
+@media screen and (max-width: 768px) {
+
+    .breadcrumb {
+        margin-top: 20px;
+    }
+    ul.breadcrumb > li >a , ul.breadcrumb > li >i {
+        font-size: 0.7em;
+    }
+    .content{
+        padding-bottom:10px;
+    }
+}
+
+.breadcrumb > li + li:before {
+    content: "";
+}
+ul.breadcrumb > li >a , ul.breadcrumb > li >i {
+    font-weight: 600;
+    font-size: 1.2em;
+    color: #0E3372;
+}
+ul.breadcrumb > li >a:hover{
+    color: #6495ED;
+}
+ul.breadcrumb > li.active{
+    color:#2A2E2D;
+    font-weight: 600;
+    font-size: 1.2em;
+}
